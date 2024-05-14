@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botones de Radio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .items-socios {
+      margin: 20px 0 0 0;
+    }
+
+    .btn-custom {
+      width: 22%; /* Ajustar el ancho para mostrar cuatro botones por fila */
+      margin: 5px;
+      border-radius: 17px;
+      color: #305891;
+      display: inline-block;
+      padding: 8px;
+      text-align: center; /* Centrar el texto dentro de los botones */
+      border: 2px solid #ced4da; /* Agregar borde */
+    }
+
+    .btn-custom.active {
+      background-color: #45fca7;
+      border-color: #45fca7;
+    }
+
+    .items-socios .btn-group {
+      width: 100%;
+      text-align: center; /* Centrar los botones */
+    }
+
+    /* Estilos para hacer los botones responsive */
+    @media only screen and (max-width: 600px) {
+      .btn-custom {
+        width: 45%; /* Ajustar el ancho para mostrar dos botones por fila en dispositivos pequeños */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Botones de Radio</h1>
+
+  <form>
+    <div class="items-socios">
+      <div class="btn-group">
+        <label class="btn btn-custom">
+          <input type="radio" name="opcion" value="10000" onclick="updateButtonColor(this)">
+         Titular
+        </label>
+
+        <label class="btn btn-custom">
+          <input type="radio" name="opcion" value="17000" onclick="updateButtonColor(this)">
+          Matrimonio
+        </label>
+
+        <label class="btn btn-custom">
+          <input type="radio" name="opcion" value="25000" onclick="updateButtonColor(this)">
+          Familia Tipo
+        </label>
+
+        <label class="btn btn-custom">
+          <input type="radio" name="opcion" value="33000" onclick="updateButtonColor(this)">
+          Familia Numerosa
+        </label>
+      </div>
+    </div>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+  <script>
+    function updateButtonColor(radioButton) {
+  // Eliminar la clase 'active' de todos los botones 'radio'
+  var radioButtons = document.getElementsByName("opcion");
+  radioButtons.forEach(function(button) {
+    button.parentElement.classList.remove("active");
+  });
+
+  // Agregar la clase 'active' solo al botón 'radio' seleccionado
+  radioButton.parentElement.classList.add("active");
+      }
+</script>
+
+</body>
+</html>

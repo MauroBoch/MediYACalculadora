@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Multi Select Buttons Template | PrepBootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="css/calculadora.css" />
+  <!-- Enlace al archivo CSS separado -->
+
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>
+        Mediya
+        <small>La única asistencia médica que el costo lo pones vos, elegí lo que
+          necesitas, apretá calcular y luego apretá Precio Promocional y solo
+          resta descansar. Fácil, Bueno y Seguro.</small>
+      </h1>
+    </div>
+
+    <!-- Multi Select Buttons - START -->
+    <div class="container">
+      <h2>¡Selecciona el servicio que te interesa!</h2>
+
+      <div class="calculator">
+        <div class="display" id="total">0</div>
+        <!-- Botones de la calculadora irían aquí -->
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <div class="items-servicios">
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="4500">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group bizmoduleselect">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="4500" />
+                      <!-- <span class="fa fa-car fa-2x"></span> -->
+                      <h3>Especialidades</h3>
+                      <h3>médicas</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="3000">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="3000" />
+                      <!-- <span class="fa fa-truck fa-2x"></span> -->
+                      <h3>50% Descuento</h3>
+                      <h3>en Farmacias</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="2500">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="2500" />
+                      <!-- <span class="fa fa-laptop fa-2x"></span> -->
+                      <h3>Telemedícina</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="3500">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="3500" />
+                      <!-- <span class="fa fa-cube fa-2x"></span> -->
+                      <h3>Análisis Clinicos</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="3500">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="3500" />
+                      <!-- <span class="fa fa-lock fa-2x"></span> -->
+                      <h3>Análisis</h3>
+                      <h3>por Imágenes</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="4000">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="4000" />
+                      <!-- <span class="fa fa-barcode fa-2x"></span> -->
+                      <h3>Odontología</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="2500">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="2500" />
+                      <!-- <span class="fa fa-key fa-2x"></span> -->
+                      <h3>Urgencias</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="1500">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="1500" />
+                      <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                      <h3>Asistencia</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3 items-socios" data-value="10000">
+
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="10000" />
+                      <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                      <h3>Titular</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="items-socios">
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="17000">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="17000" />
+                      <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                      <h3>Matrimonio</h3>
+                      <h3 style="visibility: hidden">
+                        <div class="oculto" style="visibility: hidden">_</div>
+                      </h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="25000">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="25000" />
+                      <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                      <h3>Familia</h3>
+                      <h3>Tipo</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="33000">
+              <div class="info-block block-info clearfix">
+                <div data-toggle="buttons" class="btn-group itemcontent">
+                  <label class="btn btn-default">
+                    <div class="itemcontent">
+                      <input type="checkbox" name="var_id[]" autocomplete="off" value="33000" />
+                      <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                      <h3>Familia</h3>
+                      <h3>Numerosa</h3>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="items-totales">
+
+                <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <div class="info-block block-info clearfix">
+                    <div data-toggle="buttons" class="btn-group itemcontent">
+                      <label class="btn btn-default">
+                        <div class="itemcontent">
+                          <input type="checkbox" name="var_id[]" autocomplete="off" value="" />
+                          <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                          <h3>Calculadora</h3>
+                          <h3>Plan</h3>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                  <div class="info-block block-info clearfix">
+                    <div data-toggle="buttons" class="btn-group itemcontent">
+                      <label class="btn btn-default">
+                        <div class="itemcontent">
+                          <input type="checkbox" name="var_id[]" autocomplete="off" value="" />
+                          <!-- <span class="fa fa-keyboard-o fa-2x"></span> -->
+                          <h3>Acceder al precio</h3>
+                          <h3>Promocional</h3>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Botón "Precio Promocional" -->
+                <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="0" id="precioPromocionalBtn">
+                  <div class="info-block block-info clearfix">
+                    <div data-toggle="buttons" class="btn-group itemcontent">
+                      <label class="btn btn-">
+                        <div class="itemcontent">
+                          <input type="checkbox" name="var_id[]" autocomplete="off" />
+                          <h3>Precio</h3>
+                          <h3>Promocional</h3>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Botón "Borrar" -->
+                <div class="items col-xs-6 col-sm-3 col-md-3 col-lg-3" data-value="0">
+                  <div class="info-block block-info clearfix">
+                    <div data-toggle="buttons" class="btn-group itemcontent">
+                      <label class="btn btn-default" id="borrar">
+                        <div class="itemcontent">
+                          <input type="checkbox" name="var_id[]" autocomplete="off" />
+                          <h3>Borrar</h3>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <br />
+            <div class="form-group">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="totalant ">Total: 0</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <br />
+            <div class="form-group">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <i class="fa fa-search fa-2x pull-left searchicon"></i><input type="search" class="form-control"
+                  id="search" placeholder="Filter items..." />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <botón "Calcular Plan" -->
+          <button id="calcularPlanBtn" class="btn btn-primary">
+            Calcular Plan
+          </button>
+
+          <script>
+            $(function () {
+              var total = 0;
+
+              function actualizarTotal() {
+                $("#total").text("Total: " + total);
+              }
+
+              $(".items-servicios .items").on("click", function () {
+                var valor = parseFloat($(this).data("value"));
+                total += valor;
+                actualizarTotal();
+              });
+
+              $("#borrar").on("click", function () {
+
+                total = 0;
+                actualizarTotal();
+                // Recargar la página
+                location.reload();
+
+              });
+
+              $(".items-servicios input[type='checkbox']").change(function () {
+                if ($(this).is(":checked")) {
+                  console.log($(this).siblings("h3").text()); // Muestra el nombre del elemento seleccionado
+                } else {
+                  console.log("Se desactivó: " + $(this).siblings("h3").text()); // Muestra el nombre del elemento deseleccionado
+                }
+              });
+
+
+              $("#calcularPlanBtn").on("click", function () {
+                // Aquí calcula el total sumando los valores de los elementos seleccionados
+                actualizarTotal();
+              });
+
+              $("#precioPromocionalBtn").on("click", function () {
+                // Aquí define la lógica para determinar el precio promocional según el tipo de cliente
+                // Por ejemplo:
+                // Definir el tipo de cliente
+                var precioTitular = 4990;
+                var precioMatrimonio = 8483;
+                var precioTipo = 12475;
+                var precioNumerosa = 18463;
+
+                // Actualizar el total según el tipo de cliente
+                if (precioPromocionalBtn === "Titular") {
+                  total = precioTitular;
+                } else if (precioPromocionalBtn === "Matrimonio") {
+                  total = precioMatrimonio;
+                } else if (precioPromocionalBtn === "Tipo") {
+                  total = precioTipo;
+                } else if (precioPromocionalBtn === "Numerosa") {
+                  total = precioNumerosa;
+                }
+
+                actualizarTotal();
+              });
+
+
+              $(".items-socios input[type='checkbox']").on("click", function () {
+                // Desactivar todos los elementos del grupo
+                $(".items-socios input[type='checkbox']").prop('checked', false);
+                console.log("por aca");
+                // Activar solo el elemento clickeado
+                $(this).prop('checked', true);
+              });
+
+              $("#search").on("keyup", function () {
+                var pattern = $(this).val();
+                $(".items-servicios .items").hide();
+                $(".items-servicios .items")
+                  .filter(function () {
+                    return $(this).text().match(new RegExp(pattern, "i"));
+                  })
+                  .show();
+              });
+            });
+          </script>
+      </div>
+</body>
+
+</html>

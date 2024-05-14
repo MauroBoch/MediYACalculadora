@@ -1,0 +1,116 @@
+#search {
+  width: 90%;
+}
+
+.searchicon {
+  color: #5cb85c;
+}
+/*  Botones servicios */
+.items-servicios {
+  margin: 20px 0 0 0;
+}
+
+.items-servicios label.btn-default.active {
+  background-color: #007ba7;
+  color: #fff;
+}
+
+.items-servicios label.btn-default {
+  width: 90%;
+  border: 1px solid #082dd1;
+  margin: 5px;
+  border-radius: 17px;
+  color: #305891;
+}
+
+.items-servicios label .itemcontent {
+  width: 100%;
+}
+
+.items-servicios .btn-group {
+  width: 90%;
+}
+
+
+
+/*  Boton Calculos*/
+
+.items-totales {
+  margin: 20px 0 0 0;
+}
+
+.items-totales label.btn-default.active {
+  background-color: #fff;
+  color: #305891;
+}
+
+.items-totales label.btn-default {
+  width: 90%;
+  border: 1px solid #fdc408;
+  margin: 5px;
+  border-radius: 17px;
+  color: #305891;
+}
+
+.items-totales label .itemcontent {
+  width: 100%;
+}
+
+.items-totales .btn-group {
+  width: 90%;
+}
+.calculator {
+  width: 300px;
+  height: 100px;
+  background-color: #f3f3f3;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.display {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 36px; /* Tamaño de la fuente aumentado */
+  font-family: Arial, sans-serif; /* Tipo de fuente */
+}
+
+
+.items-socios {
+  margin: 20px 0 0 0;
+}
+
+.btn-custom {
+  width: 22%; /* Ajustar el ancho para mostrar cuatro botones por fila */
+  margin: 5px;
+  border-radius: 17px;
+  color: #305891;
+  display: inline-block;
+  padding: 8px;
+  text-align: center; /* Centrar el texto dentro de los botones */
+  border: 2px solid #ced4da; /* Agregar borde */
+}
+
+.btn-custom.active {
+  background-color: #45fca7;
+  border-color: #45fca7;
+}
+
+.items-socios .btn-group {
+  width: 100%;
+  text-align: center; /* Centrar los botones */
+}
+
+/* Estilos para hacer los botones responsive */
+@media only screen and (max-width: 600px) {
+  .btn-custom {
+    width: 45%; /* Ajustar el ancho para mostrar dos botones por fila en dispositivos pequeños */
+  }
+}
