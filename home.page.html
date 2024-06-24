@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Mediya
+      <small></small>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h1 style="text-align: center;">
+      La única asistencia médica que el costo lo pones vos, elegí lo que necesitas, apretá calcular y luego apretá Precio Promocional y solo resta descansar. Fácil, Bueno y Seguro.
+    </h1>
+    <h2 style="text-align: center;">¡Selecciona el servicio que te interesa!</h2>
+
+    <div class="calculator">
+      <div class="display" id="total">Total: {{ total | number:'1.0-0' }}</div>
+    </div>
+
+    <!-- =================== Servicios ====================== -->
+    <div class="row">
+      <div class="form-group">
+        <div class="items-servicios">
+          <div class="btn-group">
+            <button class="btn-custom" *ngFor="let botonServicio of botonesServicios" (click)="selectButton(botonServicio)" [ngClass]="{'selected': botonServicio.selected}">
+              <h3>{{ botonServicio.etiqueta }}</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================== Titulares ====================== -->
+    <ion-list>
+      <ion-radio-group (ionChange)="handleRadioChange($event)">
+        <div class="btn-group-horizontal">
+          <div *ngFor="let opcion of opcionesTitulares" class="radio-button-item" [ngClass]="{'selected': opcion.selected}">
+            <ion-label>{{ opcion.label }}</ion-label>
+            <ion-radio [value]="opcion"></ion-radio>
+          </div>
+        </div>
+      </ion-radio-group>
+    </ion-list>
+
+    <!-- =================== Botones Especiales ====================== -->
+    <div class="row">
+      <div class="form-group">
+        <div class="items-servicios">
+          <div class="btn-group">
+            <button class="btn-custom" *ngFor="let button of botonesEspecial" (click)="selectButton(button)" [ngClass]="{'selected': button.selected}">
+              <h3>{{ button.etiqueta }}</h3>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

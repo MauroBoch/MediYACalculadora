@@ -1,0 +1,174 @@
+#search {
+  width: 90%;
+}
+
+.searchicon {
+  color: #5cb85c;
+}
+
+/* Botones servicios */
+.items-servicios {
+  margin: 20px 0 0 0;
+}
+
+.items-servicios .btn-custom {
+  width: 22%;
+  margin: 5px;
+  border-radius: 17px;
+  color: #305891;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #ced4da;
+}
+
+.items-servicios .btn-custom.selected {
+  background-color: #45fca7;
+  border-color: #45fca7;
+}
+
+.items-servicios .btn-group {
+  width: 100%;
+  text-align: center;
+}
+
+/* Botones totales */
+.items-totales {
+  margin: 30px 0 0 0;
+}
+
+.items-totales .btn-custom {
+  width: 90%;
+  border: 1px solid #fdc408;
+  margin: 5px;
+  border-radius: 17px;
+  color: #305891;
+}
+
+.items-totales .btn-custom.selected {
+  background-color: #fff;
+  color: #305891;
+}
+
+.items-totales .btn-group {
+  width: 90%;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Altura ajustable según el diseño */
+}
+
+.display {
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 600px;
+}
+
+.btn-custom {
+  width: 100%;
+  margin: 5px 0;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.selected {
+  background-color: #d1e7dd;
+}
+
+.display {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  text-align: right;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-family: Arial, sans-serif;
+}
+
+.items-socios {
+  margin: 20px 0 0 0;
+}
+
+.btn-custom {
+  width: 22%;
+  margin: 5px;
+  border-radius: 17px;
+  color: #305891;
+  display: inline-block;
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #ced4da;
+}
+
+.btn-custom.active {
+  background-color: #45fca7;
+  border-color: #45fca7;
+}
+
+.items-socios .btn-group {
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilos para hacer los botones responsive */
+@media only screen and (max-width: 600px) {
+  .btn-custom {
+    width: 45%;
+  }
+}
+
+.selected {
+  background-color: #305891;
+  color: white;
+}
+
+/* Estilos para botones de radio como botones clickeables */
+.btn-group-horizontal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.radio-button-item {
+  display: inline-flex;
+  align-items: center;
+  background-color: #305891;
+  border: 2px solid #ced4da;
+  border-radius: 17px;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.radio-button-item.selected {
+  background-color: #45fca7;
+  color: white;
+  border-color: #45fca7;
+}
+
+.radio-button-item ion-label {
+  margin-right: 10px;
+  color: white; /* Para que el texto sea legible */
+}
+
+.radio-button-item ion-radio {
+  margin-left: 5px;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+  .radio-button-item {
+    width: 45%;
+  }
+}
